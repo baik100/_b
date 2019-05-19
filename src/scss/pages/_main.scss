@@ -1,0 +1,319 @@
+.slide {
+
+}
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.header-padding {
+  padding-top: 140px;
+  .isScroll & {
+    height: 93px;
+  }
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 140px;
+  z-index: 1500;
+  background: #fff;
+  .isScroll & {
+    height: 93px;
+  }
+  .logo {
+    float: left;
+    svg {
+      width: 120px;
+      height: 27px;
+      fill: #1b1b1c;
+      -webkit-transition:  .4s;
+      -moz-transition:  .4s;
+      -ms-transition:  .4s;
+      -o-transition:  .4s;
+      transition:  .4s;
+      .isScroll & {
+        margin-bottom: 20px;
+        width: 96px;
+        height: 22px;
+      }
+    }
+  }
+  nav {
+    ul {
+      float: right;
+      padding-top: 30px;
+      .isScroll & {
+        padding-top: 25px;
+      }
+      .nav-item {
+        float: left;
+        font-size: 14px;
+        color: #1b1b1c;
+        padding: 13px 25px;
+        &:last-child {
+          text-align: center;
+          width: 150px;
+          height: 50px;
+          line-height: 50px;
+          border: 1px solid #1b1b1c;
+          background: #fff;
+          margin-left: 10px;
+          padding: 0;
+          a {
+            display: block;
+            font-size: 11px;
+            color: #1b1b1c;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section {
+  .firstPage {
+    .visual-text {
+      width: 680px;
+      font-size: 36px;
+      font-weight: bold;
+      padding-bottom: 122px;
+    }
+  }
+  .secondPage {
+    position: relative;
+    .slider {
+      ul {
+        .slide-image {
+          width: 100%;
+          height: 610px;
+          &.image-01 {
+            background: url("https://basicagency.com/imager/uploads/case-studies/Beats-by-Dre/6203/bbd-featured-work-card_974bba97ebdbfe38c7c6078ece6f6a17.jpg")50%/cover no-repeat;
+          }
+          &.image-02 {
+            background: url("https://basicagency.com/imager/uploads/case-studies/BB-Dakota/6473/BB-Dakota-Cover-Image-02_b0c80ca03ba713639113a0034ddf0313.jpg")50%/cover no-repeat;
+          }
+          &.image-03 {
+            background: url("https://basicagency.com/imager/uploads/case-studies/Nixon/6205/nixon-featured-work-card_b0c80ca03ba713639113a0034ddf0313.jpg")50%/cover no-repeat;
+          }
+          &.image-04 {
+            background: url("https://basicagency.com/imager/uploads/case-studies/Fender-Academy/6477/Fender-Academy-Bassbreaker-Cover-Image-01B_b0c80ca03ba713639113a0034ddf0313.jpg")50%/cover no-repeat;
+          }
+          &.image-05 {
+            background: url("https://basicagency.com/imager/uploads/case-studies/Chrome/4896/Vernor_ChromeFamilia-6163_b0c80ca03ba713639113a0034ddf0313.jpg")50%/cover no-repeat;
+          }
+
+        }
+      }
+
+      .slide-text {
+        .inner {
+          position: absolute;
+          top: 110px;
+          left: 110px;
+          background: #fff;
+          width: 390px;
+          height: 390px;
+          padding: 40px 50px;
+          z-index: 10;
+          .icon {
+            img {
+              width: 37px;
+              height: 37px;
+            }
+          }
+          .text {
+            width: 220px;
+            span {
+              display: block;
+              font-size: 12px;
+              padding: 0 0 35px;
+            }
+            font-size: 18px;
+          }
+        }
+      }
+
+      .slick-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        z-index: 100;
+        li {
+          background: transparent;
+          border: none;
+          font-size: 0;
+          display: inline-block;
+          width: 48px;
+          height: 48px;
+          padding: 0 7px;
+          svg {
+            .circle--bg {
+              fill: #ddd;
+              opacity: .5;
+            }
+            .circle--fill {
+              fill: #fff;
+            }
+          }
+        }
+      }
+
+      .slick-slider {
+
+        .slick-next {
+          position: absolute;
+          z-index: 10;
+          right: 100px;
+          bottom: 20px;
+          color: #ffffff;
+          background: transparent;
+          border: none;
+          font-size: 14px;
+          cursor: pointer;
+        }
+        .slick-prev {
+          display: none !important;
+        }
+      }
+    }
+  }
+  .thirdPage, .forthPage {
+    padding: 123px 0;
+    .label {
+      font-size: 12px;
+      margin-bottom: 65px;
+    }
+    h3 {
+      font-size: 31px;
+      width: 700px;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+
+    .news-list {
+      margin-top: 120px;
+      ul {
+        .news-item {
+          float: left;
+          width: 33.33%;
+          .thumb {
+            &:hover {
+              .image {
+                -webkit-transform: scale(0.9);
+                -moz-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                -o-transform: scale(0.9);
+                transform: scale(0.9);
+              }
+            }
+            .image {
+              background: url("https://basicagency.com/imager/uploads/case-studies/14005/Blog-post-hero-new_4fd950619b6fc4dddc68576d9a1d3850.jpg")50% /cover no-repeat;
+              width: 307px;
+              height: 247px;
+              margin: 0 auto;
+              -webkit-transition:  .7s;
+              -moz-transition:  .7s;
+              -ms-transition:  .7s;
+              -o-transition:  .7s;
+              transition:  .7s;
+            }
+          }
+          .news-detail {
+            width: 270px;
+            padding-left: 60px;
+            .news-date {
+              padding: 33px 0 25px;
+              font-size: 12px;
+            }
+            .news-desc {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .fifthPage {
+    ul {
+      background: #000;
+      height: 610px;
+      .ecommers-item {
+        float: left;
+        width: 25%;
+        padding: 0 55px 55px;
+        em {
+          font-size: 10px;
+          color: #fff;
+          margin-bottom: 25px;
+        }
+        h5 {
+          font-size: 18px;
+          color: #fff;
+          width: 250px;
+          margin-bottom: 30px;
+        }
+        p {
+          font-size: 13px;
+          color: #fff;
+          margin-top: 30px;
+          line-height: 2;
+        }
+      }
+    }
+  }
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+.btn-white {
+  width: 150px;
+  height: 50px;
+  font-size: 11px;
+  line-height: 50px;
+  border: 1px solid #1b1b1c;
+  background: #fff;
+  text-align: center;
+  margin-top: 25px;
+  text-transform: uppercase;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    bottom: 0;
+    z-index: -1;
+    background: #1b1b1c;
+  }
+  &:hover {
+    color: #fff;
+    background: transparent;
+    &:before {
+      width: 150px;
+    }
+  }
+}
+
+.btn-black {
+  width: 150px;
+  height: 50px;
+  font-size: 11px;
+  line-height: 50px;
+  border: 1px solid #1b1b1c;
+  background: #1b1b1c;
+  text-align: center;
+  color: #fff;
+  margin-top: 17px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
