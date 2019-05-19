@@ -61,7 +61,7 @@ var path = {
         conf: 'src/conf',
         html: 'src/html'
     },
-    build: 'ul-library'
+    build: 'pantone'
 };
 
 

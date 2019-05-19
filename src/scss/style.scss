@@ -1,8 +1,11 @@
-@charset "UTF-8";
-
-@import "variable";
+//Base
 @import "base/reset";
 @import "base/common";
 
-@import "pages/my-book-list";
-@import "pages/todo";
+//Variable
+@import "helper/variable";
+@import "helper/mixin";
+@import "helper/fullpage";
+
+//Pages
+@import "pages/main";
