@@ -7,7 +7,7 @@
 /coverage
 
 # production
-/dist/**
+/pantone/**
 
 # misc
 .DS_Store
